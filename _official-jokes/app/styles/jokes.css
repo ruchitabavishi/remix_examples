@@ -1,4 +1,5 @@
 .jokes-layout {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   min-height: inherit;
@@ -52,6 +53,7 @@
 }
 
 .jokes-main .container {
+  height: 100%;
   display: flex;
   gap: 1rem;
 }
@@ -69,6 +71,67 @@
   padding-bottom: 1rem;
   border-top: 1px solid var(--color-border);
 }
+
+.search-container {
+  width: 60%;
+  position: relative;
+}
+
+.search-results {
+  z-index: 1;
+  width: 100%;
+  border: 1x solid #8a4fff;
+  border-radius: 8px;
+  background-color: #8a4fff;
+  position: absolute;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.user:hover {
+  background-color: #6d1fbc;
+}
+
+.jokes-container {
+  margin-top: 20px;
+}
+
+.jokes-container h2 {
+  margin-bottom: 10px;
+}
+
+.jokes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.joke-card {
+  background-color: #8a4fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.joke-card p {
+  margin: 0;
+}
+
+.jokes-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.jokes-container li {
+  margin-bottom: 5px;
+}
+
 
 @media print, (min-width: 640px) {
   .jokes-header .logo {

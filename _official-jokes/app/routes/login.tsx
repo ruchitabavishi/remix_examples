@@ -220,6 +220,9 @@ export default function Login() {
           <li>
             <Link to="/jokes">Jokes</Link>
           </li>
+          <li>
+            <Link to="/jokesByUsers">All Jokes</Link>
+          </li>
         </ul>
       </div>
     </div>
